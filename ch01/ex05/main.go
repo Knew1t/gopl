@@ -24,9 +24,6 @@ const (
 	blackIndex = 1 // next color in palette
 )
 
-func main() {
-	lissajous(os.Stdout)
-}
 func lissajous(out io.Writer) {
 	const (
 		cycles  = 5     // number of complete x oscillator revolutions
@@ -51,4 +48,7 @@ func lissajous(out io.Writer) {
 		anim.Image = append(anim.Image, img)
 	}
 	gif.EncodeAll(out, &anim) // NOTE: ignoring encoding errors
+}
+func main() {
+	lissajous(os.Stdout)
 }

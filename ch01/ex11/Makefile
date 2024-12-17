@@ -1,0 +1,59 @@
+TARGET=fetchall
+
+all: 
+	go build -o $(TARGET)  main.go 
+	@./fetchall https://golang.org http://gopl.io https://godoc.org \
+	http://google.com \
+	http://youtube.com \
+	http://facebook.com \
+	http://baidu.com \
+	http://wikipedia.org \
+	http://yahoo.com \
+	http://google.co.in \
+	http://reddit.com \
+	http://qq.com \
+	http://taobao.com \
+	http://amazon.com \
+	http://tmall.com \
+	http://google.co.jp \
+	http://twitter.com \
+	http://sohu.com \
+	http://live.com \
+	http://vk.com \
+	http://instagram.com \
+	http://sina.com.cn \
+	http://360.cn \
+	http://google.de \
+	http://jd.com \
+	http://linkedin.com \
+	http://google.co.uk \
+	http://weibo.com \
+	http://google.fr \
+	http://google.ru \
+	http://google.com.ru \
+	http://yahoo.co.jp \
+	http://yandex.ru \
+	http://hao123.com \
+	http://t.co \
+	http://google.com.hk \
+	http://netflix.com \
+	http://imgur.com \
+	http://google.it \
+	http://ebay.com \
+	http://pornhub.com \
+	http://google.es \
+	http://detail.tmall.com \
+	http://wordpress.com \
+	http://msn.com \
+	http://aliexpress.com \
+	http://bing.com \
+	http://tumblr.com \
+	http://livejasmin.com \
+	http://google.ca \
+	http://microsoft.com \
+	http://stackoverflow.com \
+	http://ok.ru 
+
+clean:
+	rm $(TARGET) output.txt
+
