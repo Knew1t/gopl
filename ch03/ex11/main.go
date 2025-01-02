@@ -28,15 +28,15 @@ func comma(s string) string {
 	var result bytes.Buffer
 	i := 0
 	for _, letter := range s {
-        if ( letter == '.' || letter == ',' ){
+		if letter == '.' || letter == ',' || letter == '-' {
 			result.WriteRune(letter)
-            continue
-        }
-		if i != 0 && i%3 == 0  {
+			continue
+		}
+		if i != 0 && i%3 == 0 {
 			result.WriteByte(',')
 		}
 		result.WriteByte(byte(letter))
-        i++
+		i++
 	}
 
 	return result.String()
