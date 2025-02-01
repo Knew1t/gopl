@@ -42,31 +42,31 @@ func main() {
 			continue
 		}
 		if unicode.IsLetter(r) {
-            // fmt.Println(r , " is letter")
+			// fmt.Println(r , " is letter")
 			types["letters"]++
 		} else if unicode.IsControl(r) {
-            // fmt.Println(r , " is control")
+			// fmt.Println(r , " is control")
 			types["controls"]++
 		} else if unicode.IsDigit(r) {
-            // fmt.Println(r , " is digit")
+			// fmt.Println(r , " is digit")
 			types["digits"]++
 		} else if unicode.IsGraphic(r) {
-            // fmt.Println(r , " is graphic")
+			// fmt.Println(r , " is graphic")
 			types["graphics"]++
 		} else if unicode.IsNumber(r) {
-            // fmt.Println(r , " is number")
+			// fmt.Println(r , " is number")
 			types["numbers"]++
 		} else if unicode.IsPunct(r) {
-            // fmt.Println(r , " is punct")
+			// fmt.Println(r , " is punct")
 			types["punct"]++
 		} else if unicode.IsSpace(r) {
-            // fmt.Println(r , " is space")
+			// fmt.Println(r , " is space")
 			types["space"]++
 		} else if unicode.IsSymbol(r) {
-            // fmt.Println(r , " is sym")
+			// fmt.Println(r , " is sym")
 			types["symbol"]++
 		} else if unicode.IsMark(r) {
-            // fmt.Println(r , " is Mark")
+			// fmt.Println(r , " is Mark")
 			types["marks"]++
 
 		}
